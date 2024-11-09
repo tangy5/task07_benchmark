@@ -81,7 +81,10 @@ def main():
         use_checkpoint=args.use_checkpoint,
     ) # network: {_target_: SwinUNETR, feature_size: 48, img_size: 96, in_channels: '@input_channels',
       # out_channels: '@output_classes', spatial_dims: 3, use_checkpoint: false, use_v2: false}
-    model_dict = torch.load(pretrained_pth)
+    if args.pretrained_model_name == "swinunetr_task07_model.pt"
+        model_dict = torch.load(pretrained_pth)['state_dict']
+    else:
+        model_dict = torch.load(pretrained_pth)
 
     model.load_state_dict(model_dict)
     model.eval()

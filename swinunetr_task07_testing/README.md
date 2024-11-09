@@ -9,7 +9,12 @@ JSON file already included.
 
 Traianed checkpoints: 
 
-SwinUNETR: <a href="https://drive.google.com/file/d/1SWzpUPe1gbmCZgdLr28T3FZCCkExhpEZ/view?usp=sharing"> link</a>.
+SwinUNETR: <a href="https://drive.google.com/file/d/1u4V0GPr7hNNj-jHr3dv_K2qq17TdXDRu/view?usp=sharing"> link</a>.
+
+Iteration 2 SwinUNETR model:
+
+<a href="https://drive.google.com/file/d/1UAERW0wqH8rA27sSEMw8MSiM_t9b2npL/view?usp=sharing"> link</a>.
+
 
 ```bash
 python test.py --json_list=<json-path> --data_dir=<data-path> --feature_size=<feature-size>\
